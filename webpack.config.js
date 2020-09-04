@@ -9,5 +9,10 @@ module.exports = {
   },
   devServer: {
     inline: false
+  },
+  module: {
+    rules: [
+      {test: /\.ts$/, use: 'ts-loader'}
+    ]
   }
 };
